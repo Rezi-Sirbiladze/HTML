@@ -1,0 +1,35 @@
+✦ CONCEPTOS BÁSICOS DE HTML
+
+Etiqueta:
+<h1>Contenido</h1>  → Representa un título de nivel 1
+
+Elementos:
+Las etiquetas pueden tener contenido (como <p>) o estar vacías (como <img> o <input>).
+
+Las comillas " " en los atributos no son obligatorias, excepto si el valor contiene espacios.
+
+Notas generales:
+- Los navegadores aplican estilos básicos por defecto.
+- HTML no distingue entre mayúsculas y minúsculas (es case-insensitive), 
+    pero por convención se recomienda usar minúsculas.
+
+Etiquetas comunes:
+<h1>        → Encabezado
+<p>         → Párrafo
+<strong>    → Texto en negrita
+<ul>        → Lista desordenada
+<li>        → Elemento de lista
+
+Etiquetas remplazables (no necesitan etiqueta de cierre):
+<img>
+<input>
+
+Atributos más utilizados:
+hidden            → Oculta el elemento
+id=""             → Identificador único
+class=""          → Clase CSS
+src=""            → Fuente (imagen, video, etc.)
+title=""          → Texto alternativo al pasar el cursor
+alt=""            → Texto alternativo para imágenes
+width=""          → Ancho
+height=""         → Alto
