@@ -1,35 +1,43 @@
 ✦ CONCEPTOS BÁSICOS DE HTML
 
-Etiqueta:
-<h1>Contenido</h1>  → Representa un título de nivel 1
+🏷️ ETIQUETA
+<h1>Contenido</h1>
+Representa un título de nivel 1. Existen desde <h1> hasta <h6> para jerarquizar títulos.
 
-Elementos:
-Las etiquetas pueden tener contenido (como <p>) o estar vacías (como <img> o <input>).
+🧱 ELEMENTOS HTML
+- Las etiquetas pueden contener contenido (como <p>) o ser auto-cerradas (como <img> o <input>).
+- Los atributos pueden ir entre comillas dobles " " o simples ' '.
+  ⚠️ Obligatorio si el valor contiene espacios.
 
-Las comillas " " en los atributos no son obligatorias, excepto si el valor contiene espacios.
+📝 NOTAS GENERALES
+- Los navegadores aplican estilos por defecto (user agent stylesheet).
+  Para eliminarlos, se puede usar un reset CSS o Normalize.css.
+- HTML no distingue entre mayúsculas y minúsculas (es case-insensitive), pero por convención se escriben en minúsculas.
+- Las etiquetas <meta> permiten configurar Open Graph y otros metadatos.
+- <header> puede usarse varias veces dentro de una página, no solo al inicio.
+- El uso de <div> debe reservarse para casos donde no exista una etiqueta semántica adecuada.
 
-Notas generales:
-- Los navegadores aplican estilos básicos por defecto.
-- HTML no distingue entre mayúsculas y minúsculas (es case-insensitive), 
-    pero por convención se recomienda usar minúsculas.
+🏷️ ETIQUETAS SEMÁNTICAS COMUNES
+<html>    <head>    <body>    <main>
+<nav>     <title>   <header>  <a>
+<aside>   <section> <article> <footer>
+<small>   <h1>      <p>       <strong>
+<ul>      <ol>      <li>
 
-Etiquetas comunes:
-<h1>        → Encabezado
-<p>         → Párrafo
-<strong>    → Texto en negrita
-<ul>        → Lista desordenada
-<li>        → Elemento de lista
+- <h1> → Encabezado principal
+- <p> → Párrafo
+- <strong> → Texto con énfasis (visualmente en negrita)
+- <ul> / <ol> / <li> → Listas desordenadas, ordenadas y sus ítems
 
-Etiquetas remplazables (no necesitan etiqueta de cierre):
-<img>
-<input>
+🔁 ETIQUETAS AUTO-CERRADAS (VACÍAS - REMPLAZABLES)
+<meta> <link> <style> <img> <input>
+No requieren etiqueta de cierre.
 
-Atributos más utilizados:
-hidden            → Oculta el elemento
-id=""             → Identificador único
-class=""          → Clase CSS
-src=""            → Fuente (imagen, video, etc.)
-title=""          → Texto alternativo al pasar el cursor
-alt=""            → Texto alternativo para imágenes
-width=""          → Ancho
-height=""         → Alto
+⚙️ ATRIBUTOS HTML FRECUENTES
+- hidden → Oculta el elemento
+- id="" → Identificador único en la página
+- class="" → Clase para aplicar estilos CSS
+- src="" → Fuente (imagen, video, script, etc.)
+- title="" → Texto que aparece al pasar el cursor
+- alt="" → Texto alternativo para imágenes
+- width="" / height="" → Ancho y alto del elemento
