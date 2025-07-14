@@ -18,11 +18,13 @@ Representa un título de nivel 1. Existen desde <h1> hasta <h6> para jerarquizar
 - El uso de <div> debe reservarse para casos donde no exista una etiqueta semántica adecuada.
 
 🏷️ ETIQUETAS SEMÁNTICAS COMUNES
-<html>    <head>    <body>    <main>
-<nav>     <title>   <header>  <a>
-<aside>   <section> <article> <footer>
-<small>   <h1>      <p>       <strong>
-<ul>      <ol>      <li>
+<html>     <head>    <body>    <main>
+<nav>      <title>   <header>  <a>
+<aside>    <section> <article> <footer>
+<small>    <h1>      <p>       <strong>
+<ul>       <ol>      <li>      <form>
+<fieldset> <legend>  <select>  <datalist>
+<detail>
 
 - <h1> → Encabezado principal
 - <p> → Párrafo
@@ -34,10 +36,35 @@ Representa un título de nivel 1. Existen desde <h1> hasta <h6> para jerarquizar
 No requieren etiqueta de cierre.
 
 ⚙️ ATRIBUTOS HTML FRECUENTES
-- hidden → Oculta el elemento
-- id="" → Identificador único en la página
-- class="" → Clase para aplicar estilos CSS
-- src="" → Fuente (imagen, video, script, etc.)
-- title="" → Texto que aparece al pasar el cursor
-- alt="" → Texto alternativo para imágenes
-- width="" / height="" → Ancho y alto del elemento
+[ Identificación y Referencia ]
+--------------------------------
+id=""             → Identificador único del elemento.
+class=""          → Clase(s) CSS aplicadas al elemento.
+name=""           → Nombre del campo (usado en formularios).
+
+[ Presentación y Accesibilidad ]
+--------------------------------
+hidden            → Oculta el elemento del documento visual.
+title=""          → Texto mostrado al pasar el cursor.
+alt=""            → Texto alternativo (para imágenes).
+width=""          → Ancho visual del elemento.
+height=""         → Altura visual del elemento.
+role=""           → Rol semántico del elemento (accesibilidad).
+
+[ Multimedia y Recursos Externos ]
+-----------------------------------
+src=""            → Fuente del recurso (imagen, video, script, etc.).
+
+[ Formularios: Estructura y Validación ]
+-----------------------------------------
+required          → Campo obligatorio para enviar el formulario.
+placeholder=""    → Texto indicativo dentro del campo.
+pattern=""        → Patrón de validación (expresión regular).
+type=""           → Tipo de campo (text, email, number...).
+value=""          → Valor inicial o por defecto del campo.
+method=""         → Método de envío del formulario (GET o POST).
+
+[ Listas y Contadores ]
+------------------------
+start=""          → Número inicial en listas ordenadas.
+reversed          → Invierte el orden de numeración en listas.
