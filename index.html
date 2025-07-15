@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -97,6 +97,7 @@
         </aside>
 
         <section>
+            <h2>Proyectos destacados</h2>
             <article>
                 <header>
                     <h3>Sitio web Corporativo</h3>
@@ -134,7 +135,6 @@
 
         <section>
             <h2>Preguntas frecuentes</h2>
-
             <details>
                 <summary>¿Cómo puedo contactarte?</summary>
                 <p>Puedes contactarme a través del formulario de contacto en esta página, o enviarme un correo
@@ -188,6 +188,7 @@
                     <div>
                         <label for="reason">¿Por qué quieres contactar?</label>
                         <select name="reason" id="reason" required>
+                            <option value="" disabled selected>Selecciona un motivo</option>
                             <option value="trabajo">Trabajo</option>
                             <option value="colaboración">Colaboración</option>
                             <option value="otro">Otro</option>
@@ -231,17 +232,17 @@
             <button id="moreInfoClose">Cerrar</button>
         </dialog>
     </footer>
+
+    <script>
+        window.moreInfoOpen.addEventListener('click', () => {
+            window.moreInfo.showModal();
+        });
+
+        window.moreInfoClose.addEventListener('click', () => {
+            window.moreInfo.close();
+        });
+
+    </script>
 </body>
-
-<script>
-    window.moreInfoOpen.addEventListener('click', () => {
-        window.moreInfo.showModal();
-    });
-
-    window.moreInfoClose.addEventListener('click', () => {
-        window.moreInfo.close();
-    });
-
-</script>
 
 </html>
