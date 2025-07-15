@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Portfolio Rezi – Desarrollador Web</title>
+    <title>Portfolio Rezi, Desarrollador Web</title>
 
     <meta name="description" content="Este portafolio exhibe trabajos, habilidades y proyectos finalizados.">
 
     <!-- OPEN GRAPH -->
     <meta property="og:title" content="Portfolio Rezi">
     <meta property="og:description" content="Este portafolio exhibe trabajos, habilidades y proyectos finalizados.">
-    <meta property="og:image" content="images/avatar.png">
+    <meta property="og:image" content="images/avatar.webp">
     <meta property="og:image:alt"
         content="Una fotografía de Rezi con gafas de sol, sonriendo con seguridad mientras mira a la cámara.">
 
@@ -21,11 +21,16 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#09f">
 
-    <link rel="icon" type="image/jpg" href="images/avatar.png">
+    <link rel="icon" type="image/jpg" href="images/avatar.webp">
 
     <style>
         body {
             background-color: rgb(200, 200, 255);
+        }
+
+        iframe {
+            width: 100%;
+            aspect-ratio: 16/9;
         }
     </style>
 </head>
@@ -41,6 +46,10 @@
         </nav>
     </header>
 
+    <video autoplay muted loop width="300" poster="/images/avatar.png"
+        src="https://freenaturestock.com/wp-content/uploads/freenaturestock-red-sunset.mp4">
+    </video>
+
     <main>
         <p>Bienvenido a este portafolio: una colección seleccionada de <strong>trabajos</strong>,
             <strong>habilidades</strong> y <strong>proyectos</strong> que reflejan experiencia práctica y conocimientos
@@ -50,11 +59,11 @@
         <h2 id="experience">Experiencia</h2>
 
         <ul>
-            <li class="list_item">SOY18 - 2021 hasta el presente</li>
+            <li>SOY18 - 2021 hasta el presente</li>
         </ul>
 
-        <a download href="images/avatar.png">
-            <img id="avatar-rezi" src="images/avatar.png" title="Image of Rezi"
+        <a download href="images/avatar.webp">
+            <img id="avatar-rezi" src="images/avatar.webp" title="Image of Rezi"
                 alt="Una fotografía de Rezi con gafas de sol, sonriendo con seguridad mientras mira a la cámara."
                 width="200" height="200">
         </a>
@@ -63,7 +72,7 @@
 
         <aside>
             <header>
-                <span>Mis tecnologías favoritas</span>
+                <h3>Mis tecnologías favoritas</h3>
             </header>
             <ol>
                 <li>HTML</li>
@@ -71,6 +80,20 @@
                 <li>JavaScript</li>
                 <li>PHP</li>
             </ol>
+        </aside>
+
+        <aside>
+            <header>
+                <h3>Hobbies</h3>
+            </header>
+            <p>
+                Blender: creación de modelos 3D y animaciones.
+            </p>
+            <iframe style="width:100%; aspect-ratio:16/9;" width="560" height="315"
+                src="https://www.youtube.com/embed/z7eSY0RzL3o?si=Z_SXqM5twDBjC4q5" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </aside>
 
         <section>
@@ -163,7 +186,7 @@
                     <legend>Otros</legend>
 
                     <div>
-                        <label for="reason">¿Por qué queres contactar?</label>
+                        <label for="reason">¿Por qué quieres contactar?</label>
                         <select name="reason" id="reason" required>
                             <option value="trabajo">Trabajo</option>
                             <option value="colaboración">Colaboración</option>
@@ -196,12 +219,29 @@
     </main>
 
     <footer>
-        <p>© 2023 Rezi. Todos los derechos reservados.</p>
+        <p>© 2025 Rezi. Todos los derechos reservados.</p>
 
         <a href="mailto:rezi.sirbiladze2@gmail.com">Enviame un correo</a>
         <a href="tel:+34722222222">Llamame</a>
         <a href="whatsapp://send?phone=+34722222222">Enviame un WhatsApp</a>
+        <button id="moreInfoOpen">Más información</button>
+        <dialog id="moreInfo">
+            <h1>Más Información</h1>
+            <p>Para más información, visita mi sitio web o contactame directamente.</p>
+            <button id="moreInfoClose">Cerrar</button>
+        </dialog>
     </footer>
 </body>
+
+<script>
+    window.moreInfoOpen.addEventListener('click', () => {
+        window.moreInfo.showModal();
+    });
+
+    window.moreInfoClose.addEventListener('click', () => {
+        window.moreInfo.close();
+    });
+
+</script>
 
 </html>

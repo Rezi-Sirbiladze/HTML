@@ -24,7 +24,7 @@ Representa un título de nivel 1. Existen desde <h1> hasta <h6> para jerarquizar
 <small>    <h1>      <p>       <strong>
 <ul>       <ol>      <li>      <form>
 <fieldset> <legend>  <select>  <datalist>
-<detail>
+<detail>   <video>   <audio>   <dialog>
 
 - <h1> → Encabezado principal
 - <p> → Párrafo
@@ -49,11 +49,18 @@ title=""          → Texto mostrado al pasar el cursor.
 alt=""            → Texto alternativo (para imágenes).
 width=""          → Ancho visual del elemento.
 height=""         → Altura visual del elemento.
+aspect-ratio=""   → Relación ancho/alto (ej. 16/9).
 role=""           → Rol semántico del elemento (accesibilidad).
 
 [ Multimedia y Recursos Externos ]
 -----------------------------------
 src=""            → Fuente del recurso (imagen, video, script, etc.).
+poster=""         → Imagen previa de un video.
+loading=""        → Cuándo cargar (lazy/eager).
+autoplay          → Reproduce automáticamente.
+controls          → Muestra controles de reproducción.
+muted             → Silencia el audio por defecto.
+loop              → Repite el contenido en bucle.
 
 [ Formularios: Estructura y Validación ]
 -----------------------------------------
