@@ -75,3 +75,6 @@ method=""         → Método de envío del formulario (GET o POST).
 ------------------------
 start=""          → Número inicial en listas ordenadas.
 reversed          → Invierte el orden de numeración en listas.
+
+⚙️ HERRAMIENTAS Y TÉCNICAS
+- validator.w3.org: valida la sintaxis y estructura del HTML según los estándares del W3C.
